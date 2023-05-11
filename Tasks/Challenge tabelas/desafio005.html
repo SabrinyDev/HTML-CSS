@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+        caption{
+            padding: 10px;
+            font-size: 1.3em;
+            font-weight: bolder;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .destaque{
+            background-color: pink;
+        }
+
+        col.cnome{
+            background-color: pink;
+        }
+        col.cgrupo {
+            background-color: rgb(255, 137, 157);
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Exercício de tabeça</h1>
+    
+    <table>
+
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <col class="cprof">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <tr>
+            <td scope="col">Nome</td>
+            <td scope="col">Sexo</td>
+            <td scope="col">Idade</td>
+            <td scope="col">Profissão</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+
+        <tr>
+            <td>Claudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
+        </tr>
+
+        <tr>
+            <td>Mario</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
+        </tr>
+
+        <tr>
+            <td>Sabrine</td>
+            <td>F</td>
+            <td>20</td>
+            <td>Designer</td>
+        </tr>
+
+        <tr>
+            <td>Elisangela</td>
+            <td>F</td>
+            <td>49</td>
+            <td>Arquiteta</td>
+        </tr>
+
+        <tr>
+            <td>Humberto</td>
+            <td>M</td>
+            <td>53</td>
+            <td>Policial</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
